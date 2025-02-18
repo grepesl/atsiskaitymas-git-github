@@ -91,12 +91,10 @@ h1, p {
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 18px;
     background: transparent;
     transition: 0.3s;
     box-sizing: border-box; 
     margin: 0 10px;
-
     font-size: 15px;
 }
 
@@ -111,7 +109,6 @@ h1, p {
     width: 90;
     height: 95%;
     margin: 20px;
-
     display: none;
 }
 
@@ -157,4 +154,74 @@ h1, p {
     width: 92%;
     height: 270px;
     margin: 0 48px 0 20px;
+}
+
+@media(min-width: 900px) {
+
+    .logo-gem {
+        width: 130px;
+        height: 130px;
+
+        margin-top: 9%;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+    
+    .paragraph {
+        text-align: center;
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    .nav-buttons {
+        display: flex; 
+        justify-content: center; 
+        gap: 0; 
+    }
+
+
+    .nav-buttons > button {
+        width: 10%; 
+        padding: 15px 20px; 
+        font-size: 15px;
+        margin: 0; 
+    }
+
+    .tab {
+        background-color: #181717dc;
+        width: 55%;
+        height: 85%;
+        margin: 4% 23%;
+    }
+
+
+    .xmark {
+        width: 30px;
+        margin: 30px 0 0 92%;
+    }
+
+    .intro-name {
+        padding: 0 40px;
+        font-size: 30px;
+        margin-top: 0;
+    }
+    
+    .paragraph-container > p {
+        padding: 20px;   
+    }
+    
+    .video-container {
+        width: 49vw;  
+        height: 30vh; 
+        object-fit: cover; 
+        margin: 30px 0 0 52px;
+    }
+
+    .media-container {
+        width: 92%;
+        height: 270px;
+        margin: 30px 0 0 43px;
+    }
 }

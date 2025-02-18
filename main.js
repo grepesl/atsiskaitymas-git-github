@@ -12,6 +12,8 @@ function navigate(event) {
         tabs[i].style.display = "none";
     }
 
+    document.querySelector('#main-container').style.display = "none";
+
     document.querySelector(`#${event.target.id}-container`).style.display = "block";
 }
 
