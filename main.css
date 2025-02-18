@@ -74,3 +74,33 @@ h1, p {
     border-top: 1px solid white;
     margin: 0 15px;
 }
+/* 
+.nav-buttons  > a {
+    border: 1px solid white;
+    padding: 0 200px;
+}
+
+.nav-buttons {
+    text-align: center;   
+} */
+
+.nav-buttons > a {
+    display: inline-block;
+    width: 97%; 
+    border: 1px solid white;
+    padding: 15px 0; 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.3s;
+    box-sizing: border-box; 
+    margin: 0 10px;
+}
+
+.nav-buttons > a:hover {
+    background: #ffffff57;
+    color: #ffffff;
+    cursor: pointer;
+}
