@@ -31,7 +31,7 @@ body {
     align-items: center;
 
     margin: 0 auto;
-    margin-top: 30%;
+    margin-top: 28%;
 }
 
 .gem-img {
@@ -62,4 +62,15 @@ h1, p {
 .hover-link:hover {
     color: #71afb9; 
     cursor: pointer;
+}
+
+.lining-wertical {
+    border-left: 1px solid white;
+    height: 50px;
+    margin-left: 50%;
+}
+
+.lining-horizontal {
+    border-top: 1px solid white;
+    margin: 0 15px;
 }
