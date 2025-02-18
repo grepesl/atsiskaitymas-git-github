@@ -1,10 +1,7 @@
-document.querySelector('#intro').addEventListener('click', (event) => navigate(event));
-
-document.querySelector('#work').addEventListener('click', (event) => navigate(event));
-
-document.querySelector('#about').addEventListener('click', (event) => navigate(event));
-
-document.querySelector('#contact').addEventListener('click', (event) => navigate(event));
+document.querySelector('#intro').addEventListener('click', navigate);
+document.querySelector('#work').addEventListener('click', navigate);
+document.querySelector('#about').addEventListener('click', navigate);
+document.querySelector('#contact').addEventListener('click', navigate);
 
 function navigate(event) {
     event.preventDefault();
@@ -18,8 +15,12 @@ function navigate(event) {
     document.querySelector(`#${event.target.id}-container`).style.display = "block";
 }
 
-document.querySelector('#xmark').addEventListener('click', (event) => {
+const xmarks = [...document.querySelectorAll('.xmark')]
+xmarks.forEach(item => item.addEventListener('click', close));
+
+function close(event){
     event.preventDefault();
+    console.log(event)
 
     const tabs = [...document.querySelectorAll('.tab')];
 
@@ -28,4 +29,4 @@ document.querySelector('#xmark').addEventListener('click', (event) => {
     }
 
     document.querySelector('#main-container').style.display = "block";
-});
+}
