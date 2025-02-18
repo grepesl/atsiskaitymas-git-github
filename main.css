@@ -27,3 +27,24 @@ body {
     height: 40%;
 }
 
+h1 {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h1, p {
+    color: white;
+    line-height: 30px;
+    word-spacing: 3px;
+    margin: 8px;
+}
+
+.hover-link {
+    color: white;
+    transition: color 0.3s ease; 
+}
+
+.hover-link:hover {
+    color: #71afb9; 
+    cursor: pointer;
+}
