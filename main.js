@@ -20,7 +20,6 @@ xmarks.forEach(item => item.addEventListener('click', close));
 
 function close(event){
     event.preventDefault();
-    console.log(event)
 
     const tabs = [...document.querySelectorAll('.tab')];
 
